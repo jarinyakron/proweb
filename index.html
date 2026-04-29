@@ -32,15 +32,24 @@
 </head>
 
 <body>
-
-<!-- ===== NAVBAR ===== -->
 <div class="navbar">
-  <div class="logo">Sticker Pro</div>
-  <div class="nav-links">
+  <!-- ซ้าย (PC ใช้) -->
+  <div class="logo logo-left">Sticker Pro</div>
+
+  <div class="nav-links" id="navLinks">
     <a href="#hero" class="active">หน้าหลัก</a>
     <a href="#product">สินค้า</a>
-<a href="#order-steps">ขั้นตอนการสั่ง</a>
+    <a href="#order-steps">ขั้นตอนการสั่ง</a>
     <a href="#footer">ติดต่อ</a>
+  </div>
+
+  <!-- ขวา -->
+  <div class="nav-right">
+    <!-- โลโก้สำหรับมือถือ -->
+    <div class="logo-mobile">Sticker Pro</div>
+
+    <img src="pro01.jpg" class="logo-img" alt="logo">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
   </div>
 </div>
 <section class="hero" id="hero">
@@ -56,27 +65,27 @@
 <!-- ===== SLIDER (อยู่นอก hero) ===== -->
 <div class="slider">
   <div class="slides" id="slideTrack">
-    <div class="card"><img src="imge/stkgloss10.jpg"><div class="card-title">สติกเกอร์เงา/ด้าน</div></div>
+    <div class="card"><img src="stkgloss10.jpg"><div class="card-title">สติกเกอร์เงา/ด้าน</div></div>
     <div class="card"><img src="สินค้า2.jpg"><div class="card-title">สติกเกอร์ไดคัท</div></div>
-    <div class="card"><img src="imge/stkgloss5.jpg"><div class="card-title">สติกเกอร์กันน้ำ</div></div>
-    <div class="card"><img src="imge/stkgloss7.jpg"><div class="card-title">PVC กันน้ำ</div></div>
-    <div class="card"><img src="imge/stkgloss6.jpg"><div class="card-title">ฟอยล์ทอง</div></div>
-        <div class="card"><img src="imge/stkgloss10.jpg"><div class="card-title">สติกเกอร์เงา/ด้าน</div></div>
-    <div class="card"><img src="imge/stkgloss8.jpg"><div class="card-title">สติกเกอร์ไดคัท</div></div>
+    <div class="card"><img src="stkgloss5.jpg"><div class="card-title">สติกเกอร์กันน้ำ</div></div>
+    <div class="card"><img src="stkgloss7.jpg"><div class="card-title">PVC กันน้ำ</div></div>
+    <div class="card"><img src="stkgloss6.jpg"><div class="card-title">ฟอยล์ทอง</div></div>
+        <div class="card"><img src="stkgloss10.jpg"><div class="card-title">สติกเกอร์เงา/ด้าน</div></div>
+    <div class="card"><img src="stkgloss8.jpg"><div class="card-title">สติกเกอร์ไดคัท</div></div>
     <div class="card"><img src="สินค้า3.jpg"><div class="card-title">สติกเกอร์กันน้ำ</div></div>
-    <div class="card"><img src="imge/stkgloss7.jpg"><div class="card-title">PVC กันน้ำ</div></div>
-    <div class="card"><img src="imge/stkgloss6.jpg"><div class="card-title">ฟอยล์ทอง</div></div>
+    <div class="card"><img src="stkgloss7.jpg"><div class="card-title">PVC กันน้ำ</div></div>
+    <div class="card"><img src="stkgloss6.jpg"><div class="card-title">ฟอยล์ทอง</div></div>
     
-    <div class="card"><img src="imge/stkgloss10.jpg"><div class="card-title">สติกเกอร์เงา/ด้าน</div></div>
+    <div class="card"><img src="stkgloss10.jpg"><div class="card-title">สติกเกอร์เงา/ด้าน</div></div>
     <div class="card"><img src="สินค้า2.jpg"><div class="card-title">สติกเกอร์ไดคัท</div></div>
-    <div class="card"><img src="imge/stkgloss5.jpg"><div class="card-title">สติกเกอร์กันน้ำ</div></div>
-    <div class="card"><img src="imge/stkgloss7.jpg"><div class="card-title">PVC กันน้ำ</div></div>
-    <div class="card"><img src="imge/stkgloss6.jpg"><div class="card-title">ฟอยล์ทอง</div></div>
-        <div class="card"><img src="imge/stkgloss10.jpg"><div class="card-title">สติกเกอร์เงา/ด้าน</div></div>
-    <div class="card"><img src="imge/stkgloss8.jpg"><div class="card-title">สติกเกอร์ไดคัท</div></div>
+    <div class="card"><img src="stkgloss5.jpg"><div class="card-title">สติกเกอร์กันน้ำ</div></div>
+    <div class="card"><img src="stkgloss7.jpg"><div class="card-title">PVC กันน้ำ</div></div>
+    <div class="card"><img src="stkgloss6.jpg"><div class="card-title">ฟอยล์ทอง</div></div>
+        <div class="card"><img src="stkgloss10.jpg"><div class="card-title">สติกเกอร์เงา/ด้าน</div></div>
+    <div class="card"><img src="stkgloss8.jpg"><div class="card-title">สติกเกอร์ไดคัท</div></div>
     <div class="card"><img src="สินค้า3.jpg"><div class="card-title">สติกเกอร์กันน้ำ</div></div>
-    <div class="card"><img src="imge/stkgloss7.jpg"><div class="card-title">PVC กันน้ำ</div></div>
-    <div class="card"><img src="imge/stkgloss6.jpg"><div class="card-title">ฟอยล์ทอง</div></div>
+    <div class="card"><img src="stkgloss7.jpg"><div class="card-title">PVC กันน้ำ</div></div>
+    <div class="card"><img src="stkgloss6.jpg"><div class="card-title">ฟอยล์ทอง</div></div>
   </div>
 </div>
 <!-- ===== INFO SECTION ===== -->
@@ -159,18 +168,18 @@
 
 <!-- ===== PRODUCT SECTION ===== -->
 <section class="product-section" id="product">
-  <div class="product-card"><span class="badge yellow">🔥 Hot</span><img src="imge/stkgloss6.jpg"><div class="content"><h3>สติ๊กเกอร์</h3><p>PP เงา/PP ด้าน/สติ๊กเกอร์กระดาษ ฯลฯ</p><button class="btn choose" onclick="goPage('stickers.html')">ดูรายละเอียด</button></div></div>
-  <div class="product-card"><span class="badge yellow">⭐ แนะนำ</span><img src="imge/menu a4-01.png"><div class="content"><h3>เมนู</h3><p>ติดพลาสวูด / ฟิวเจอร์บอร์ด</p><button class="btn choose" onclick="goPage('menu.html')">ดูรายละเอียด</button></div></div>
-  <div class="product-card"><img src="imge/บัตรพลาสติก-01.png"><div class="content"><h3>นามบัตร</h3><p>บัตรแข็ง/บัตรพลาสติก/บัตรสะสมแต้ม</p><button class="btn choose" onclick="goPage('business-card.html')">ดูรายละเอียด</button></div></div>
-  <div class="product-card"><img src="imge/การ์ดแต่ง-01-01.png"><div class="content"><h3>การ์ด</h3><p>เต๊นท์การ์ด</p><button class="btn choose" onclick="goPage('card.html')">ดูรายละเอียด</button></div></div>
-  <div class="product-card"><img src="imge/Brochure-01.png"><div class="content"><h3>โปสเตอร์</h3><p>โบรชัวร์ / แผ่นพับ</p><button class="btn choose" onclick="goPage('poster.html')">ดูรายละเอียด</button></div></div>
-  <div class="product-card"><img src="imge/Wristband-สายรัดข้อมือ-1.jpg"><div class="content"><h3>สายคาด</h3><p>สายคาดกล่อง / ริสแบรนด์ / สายรัดแขน</p><button class="btn choose" onclick="goPage('band.html')">ดูรายละเอียด</button></div></div>
-  <div class="product-card"><span class="badge green">⭐ แนะนำ</span><img src="imge/ป้าย.jpg"><div class="content"><h3>งานป้าย</h3><p>ไวนิล / ป้ายกองโจร / roll up / ขา X</p><button class="btn choose" onclick="goPage('sign.html')">ดูรายละเอียด</button></div></div>
-  <div class="product-card"><img src="imge/กล่อง.jpg"><div class="content"><h3>Packaging</h3><p>กล่อง / แฟ้ม / ที่แขวนประตู</p><button class="btn choose" onclick="goPage('packaging.html')">ดูรายละเอียด</button></div></div>
-  <div class="product-card"><img src="imge/กรวยไอศกรีม-01.png"><div class="content"><h3>บรรจุภัณฑ์อาหาร</h3><p>กระดาษไขรองขนม/กรวยไอติม/ซองแก้ว</p><button class="btn choose" onclick="goPage('food.html')">ดูรายละเอียด</button></div></div>
-  <div class="product-card"><img src="imge/แฟ้ม-01.png"><div class="content"><h3>หนังสือแบบฟอร์มธุรกิจ</h3><p>งานพิมพ์บิล / ใบส่งของ / ใบกำกับภาษี</p><button class="btn choose" onclick="goPage('document.html')">ดูรายละเอียด</button></div></div>
-  <div class="product-card"><img src="imge/stkgloss11.jpg"><div class="content"><h3>ภาพแคนวาส</h3><p>ตกแต่งร้าน / ของขวัญ</p><button class="btn choose" onclick="goPage('canvas.html')">ดูรายละเอียด</button></div></div>
-  <div class="product-card"><img src="imge/กล่องพัสดุ.jpg"><div class="content"><h3>กล่องพัสดุ</h3><p>กล่องลูกฟูก / กล่องส่งของ</p><button class="btn choose" onclick="goPage('box.html')">ดูรายละเอียด</button></div></div>
+  <div class="product-card"><span class="badge yellow">🔥 Hot</span><img src="stkgloss6.jpg"><div class="content"><h3>สติ๊กเกอร์</h3><p>PP เงา/PP ด้าน/สติ๊กเกอร์กระดาษ ฯลฯ</p><button class="btn choose" onclick="goPage('stickers.html')">ดูรายละเอียด</button></div></div>
+  <div class="product-card"><span class="badge yellow">⭐ แนะนำ</span><img src="menu a4-01.png"><div class="content"><h3>เมนู</h3><p>ติดพลาสวูด / ฟิวเจอร์บอร์ด</p><button class="btn choose" onclick="goPage('menu.html')">ดูรายละเอียด</button></div></div>
+  <div class="product-card"><img src="บัตรพลาสติก-01.png"><div class="content"><h3>นามบัตร</h3><p>บัตรแข็ง/บัตรพลาสติก/บัตรสะสมแต้ม</p><button class="btn choose" onclick="goPage('business-card.html')">ดูรายละเอียด</button></div></div>
+  <div class="product-card"><img src="การ์ดแต่ง-01-01.png"><div class="content"><h3>การ์ด</h3><p>เต๊นท์การ์ด</p><button class="btn choose" onclick="goPage('card.html')">ดูรายละเอียด</button></div></div>
+  <div class="product-card"><img src="Brochure-01.png"><div class="content"><h3>โปสเตอร์</h3><p>โบรชัวร์ / แผ่นพับ</p><button class="btn choose" onclick="goPage('poster.html')">ดูรายละเอียด</button></div></div>
+  <div class="product-card"><img src="Wristband-สายรัดข้อมือ-1.jpg"><div class="content"><h3>สายคาด</h3><p>สายคาดกล่อง / ริสแบรนด์ / สายรัดแขน</p><button class="btn choose" onclick="goPage('band.html')">ดูรายละเอียด</button></div></div>
+  <div class="product-card"><span class="badge green">⭐ แนะนำ</span><img src="ป้าย.jpg"><div class="content"><h3>งานป้าย</h3><p>ไวนิล / ป้ายกองโจร / roll up / ขา X</p><button class="btn choose" onclick="goPage('sign.html')">ดูรายละเอียด</button></div></div>
+  <div class="product-card"><img src="กล่อง.jpg"><div class="content"><h3>Packaging</h3><p>กล่อง / แฟ้ม / ที่แขวนประตู</p><button class="btn choose" onclick="goPage('packaging.html')">ดูรายละเอียด</button></div></div>
+  <div class="product-card"><img src="กรวยไอศกรีม-01.png"><div class="content"><h3>บรรจุภัณฑ์อาหาร</h3><p>กระดาษไขรองขนม/กรวยไอติม/ซองแก้ว</p><button class="btn choose" onclick="goPage('food.html')">ดูรายละเอียด</button></div></div>
+  <div class="product-card"><img src="แฟ้ม-01.png"><div class="content"><h3>หนังสือแบบฟอร์มธุรกิจ</h3><p>งานพิมพ์บิล / ใบส่งของ / ใบกำกับภาษี</p><button class="btn choose" onclick="goPage('document.html')">ดูรายละเอียด</button></div></div>
+  <div class="product-card"><img src="stkgloss11.jpg"><div class="content"><h3>ภาพแคนวาส</h3><p>ตกแต่งร้าน / ของขวัญ</p><button class="btn choose" onclick="goPage('canvas.html')">ดูรายละเอียด</button></div></div>
+  <div class="product-card"><img src="กล่องพัสดุ.jpg"><div class="content"><h3>กล่องพัสดุ</h3><p>กล่องลูกฟูก / กล่องส่งของ</p><button class="btn choose" onclick="goPage('box.html')">ดูรายละเอียด</button></div></div>
 </section>
 
 
@@ -214,7 +223,7 @@
 <span>Direct Message</span>
 
 <div class="emoji-float e1">💙</div>
-<div class="emoji-float e2">👍</div>ผ
+<div class="emoji-float e2">👍</div>
 <div class="emoji-float e3">✨</div>
 <div class="emoji-float e4">😘</div>
 <div class="emoji-float e5">❤️</div>
@@ -444,16 +453,21 @@
 </div>
       <h3 style="margin-top:10px;">ติดต่อ</h3>
       <p>099-xxx-xxxx</p>
-      <p>เชียงใหม่</p>
-      <p>LINE: @yourline</p>
+      <p>LINE: @797tewwp</p>
+<h3 style="margin-top:10px;">ติดตามเรา</h3>
+<div class="social-icons">
+  <a href="https://www.facebook.com/stickerpro2020" target="_blank">
+    <img src="download.png" alt="facebook">
+  </a>
 
-      <h3 style="margin-top:10px;">ติดตามเรา</h3>
-      <div class="social-icons">
-        <a href="#"><img src="download.png"></a>
-        <a href="#"><img src="imge/ig.png"></a>
-        <a href="#"><img src="line.png"></a>
-      </div>
-    </div>
+  <a href="https://www.instagram.com/stickerpro__" target="_blank">
+    <img src="ig.png" alt="instagram">
+  </a>
+
+  <a href="https://lin.ee/9L2bmzx" target="_blank">
+    <img src="line.png" alt="line">
+  </a>
+</div>
 
   </div>
 
